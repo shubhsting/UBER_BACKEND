@@ -3,7 +3,9 @@ const userRouter = require("./Router/userRouter");
 const cors =  require("cors");
 const commonRouter = require("./Router/commonRouter");
 const rideRouter = require("./Router/rideRouter");
-const port = 5000
+require("dotenv").config();
+
+const port = process.env.PORT || 5000
 
 
 const app =express()
